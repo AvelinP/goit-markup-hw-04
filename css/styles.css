@@ -87,7 +87,7 @@ body {
 }
 .index-section1-background {
   background-color: var(--footer-background-color);
-  background-image: url(/images/index-background.jpg);
+  background-image: url("/images/index-background.jpg");
 }
 .index-section1 {
   display: flex;
