@@ -21,12 +21,16 @@ body {
 }
 .header-section,
 .footer-all,
-.index-section2,
 .index-section1 {
   width: 1200px;
   margin: 0px auto;
   padding-left: 215px;
 }
+.index-section2 {
+  width: 1200px;
+  margin: 0px auto;
+}
+
 .li-card-border {
   box-sizing: border-box;
   border: 1px solid #eeeeee;
@@ -83,7 +87,7 @@ body {
 }
 .index-section1-background {
   background-color: var(--footer-background-color);
-  background-image: url(../images/index-background.jpg);
+  background-image: url(/images/index-background.jpg);
 }
 .index-section1 {
   display: flex;
@@ -114,7 +118,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var();
+  color: var(--text-color);
 }
 
 .project-description,
@@ -176,10 +180,14 @@ body {
   gap: 30px;
   padding-inline-start: 0px;
   justify-content: center;
-  padding-left: 215px;
 }
 .our-team {
   background-color: #f5f4fa;
+}
+.index-section2,
+.section-what-we-do,
+.our-team {
+  padding-left: 215px;
 }
 
 .portfolio-main-section-buttons-list {
@@ -404,6 +412,10 @@ body {
   gap: 30px;
   padding-inline-start: 0px;
 }
+.regular-customers {
+  padding-left: 215px;
+}
+
 .li-icons-section2 {
   display: flex;
   width: 270px;
@@ -429,6 +441,14 @@ body {
 .li-regular-customers svg:hover {
   fill: #2196f3;
 }
+.li-regular-customers:hover {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
 .regular-customers-title {
   margin: 0px;
+}
+
+.social-media-list {
+  gap: 10px;
 }
