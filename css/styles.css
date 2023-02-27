@@ -21,11 +21,7 @@ body {
 }
 .header-section,
 .footer-all,
-.index-section1 {
-  width: 1200px;
-  margin: 0px auto;
-  padding-left: 215px;
-}
+.index-section1,
 .index-section2 {
   width: 1200px;
   margin: 0px auto;
@@ -87,7 +83,8 @@ body {
 }
 .index-section1-background {
   background-color: var(--footer-background-color);
-  background-image: url("../images/index-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 0.4)),
+    url("../images/index-background.jpg");
 }
 .index-section1 {
   display: flex;
@@ -183,12 +180,6 @@ body {
 }
 .our-team {
   background-color: #f5f4fa;
-}
-.index-section1,
-.index-section2,
-.section-what-we-do,
-.our-team {
-  padding-left: 215px;
 }
 
 .portfolio-main-section-buttons-list {
@@ -405,6 +396,9 @@ body {
 .icon-list-item-team svg {
   fill: #afb1b8;
 }
+.icon-list-item-team svg:hover {
+  fill: #ffffff;
+}
 
 .index-section2-icons,
 .regular-customers-logo-ul {
@@ -412,9 +406,6 @@ body {
   justify-content: center;
   gap: 30px;
   padding-inline-start: 0px;
-}
-.regular-customers {
-  padding-left: 215px;
 }
 
 .li-icons-section2 {
