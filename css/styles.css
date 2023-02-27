@@ -32,6 +32,11 @@ body {
   border: 1px solid #eeeeee;
   height: 404px;
 }
+.li-card-border:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .index-li-card-border {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -44,11 +49,11 @@ body {
 }
 .header-section-background {
   background-color: var(--background-color-header-and-main);
+  border-bottom: 1px solid #ececec;
 }
 .header-section {
   display: flex;
   flex-grow: 1;
-  border-bottom: 1px solid #ececec;
 }
 
 .container {
@@ -242,13 +247,6 @@ body {
   color: var(--text-color);
 }
 
-.header-address-links {
-  font-weight: var(--font-weight-500);
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-.header-address-links:hover,
 .header-links:hover {
   color: var(--highlight-color);
 }
@@ -331,12 +329,22 @@ body {
 .footer-address-list {
   margin-top: 12px;
 }
+.header-address-links {
+  font-weight: var(--font-weight-500);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
 
-.contact-list-icons svg {
-  fill: #757575;
+.svg-mail-icon,
+.svg-tel-icon {
+  fill: currentColor;
+}
+.header-address-links {
+  color: currentColor;
 }
 .contact-list-icons:hover {
-  stroke: #2196f3;
+  color: #2196f3;
 }
 .icon-list-item {
   display: flex;
